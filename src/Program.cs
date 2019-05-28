@@ -20,13 +20,37 @@ namespace BB2SDK
         [STAThread]
         static void Main()
         {
-            steamAPIStatus = SteamAPI.Init();
+            steamAPIStatus = InitSteamAPI();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new SDK());
+            ShutdownSteamAPI();
+        }
 
-            if (steamAPIStatus)
+        static bool InitSteamAPI()
+        {
+            try
+            {
+                return SteamAPI.Init();
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        static void ShutdownSteamAPI()
+        {
+            if (steamAPIStatus == false)
+                return;
+
+            try
+            {
                 SteamAPI.Shutdown();
+            }
+            catch
+            {
+            }
         }
     }
 }

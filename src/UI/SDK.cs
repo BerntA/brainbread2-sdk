@@ -103,6 +103,7 @@ namespace BB2SDK.UI
             {
                 MessageBox.Show(this, "Unable to init Steam API!", "Fatal Error!");
                 Close();
+                return;
             }
 
             bool appidCheck = (SteamUtils.GetAppID() == (AppId_t)382990);
@@ -110,6 +111,7 @@ namespace BB2SDK.UI
             {
                 MessageBox.Show(this, "Invalid Steam AppID detected! Verify your files!", "Fatal Error!");
                 Close();
+                return;
             }
         }
     }
