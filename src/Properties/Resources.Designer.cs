@@ -90,8 +90,8 @@ namespace BB2SDK.Properties {
         ///			&quot;GameDir&quot;		&quot;%s1\hammer&quot;
         ///			&quot;Hammer&quot;
         ///			{
-        ///				&quot;GameData0&quot;		&quot;%s1\brainbread2\fgd\game.fgd&quot;
-        ///				&quot;GameData1&quot;		&quot;%s1\brainbread2\fgd\propper.fgd&quot;
+        ///				&quot;GameData0&quot;		&quot;%s1\bin\fgd\bb2.fgd&quot;
+        ///				&quot;GameData1&quot;		&quot;%s1\bin\fgd\propper.fgd&quot;
         ///				&quot;TextureFormat&quot;		&quot;5&quot;
         ///				&quot;MapFormat&quot;		&quot;4&quot;
         ///				&quot;DefaultTextureScale&quot;		&quot;0.250000&quot;
@@ -101,7 +101,8 @@ namespace BB2SDK.Properties {
         ///				&quot;DefaultPointEntity&quot;		&quot;prop_static&quot;
         ///				&quot;BSP&quot;		&quot;%s1\bin\vbsp.exe&quot;
         ///				&quot;Vis&quot;		&quot;%s1\bin\vvis.exe&quot;
-        ///				&quot;Light&quot;		&quot;%s1\ [rest of string was truncated]&quot;;.
+        ///				&quot;Light&quot;		&quot;%s1\bin\vrad.exe&quot;
+        ///		 [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GameConfig {
             get {

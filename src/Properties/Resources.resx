@@ -134,8 +134,8 @@
 			"GameDir"		"%s1\hammer"
 			"Hammer"
 			{
-				"GameData0"		"%s1\brainbread2\fgd\game.fgd"
-				"GameData1"		"%s1\brainbread2\fgd\propper.fgd"
+				"GameData0"		"%s1\bin\fgd\bb2.fgd"
+				"GameData1"		"%s1\bin\fgd\propper.fgd"
 				"TextureFormat"		"5"
 				"MapFormat"		"4"
 				"DefaultTextureScale"		"0.250000"
